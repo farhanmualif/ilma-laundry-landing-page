@@ -21,23 +21,29 @@
           :data-aos="index < 3 ? 'fade-right' : 'fade-left'"
           data-aos-duration="1000"
           data-aos-once="true"
-          class="group relative rounded-3xl overflow-hidden shadow-lg transform-gpu transition-all duration-500 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
-          <!-- Card Content -->
+          class="relative rounded-3xl group">
+          <!-- Hover Area -->
           <div
-            class="relative h-80 bg-cover bg-center bg-no-repeat"
-            :style="`background-image: url('${service.image}')`">
-            <!-- Overlay -->
+            class="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 shadow-md bg-white rounded-3xl">
+            <!-- Card Content -->
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              class="relative h-80 bg-cover bg-center bg-no-repeat rounded-3xl"
+              :style="`background-image: url('${service.image}')`">
+              <!-- Overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent rounded-3xl"></div>
 
-            <!-- Content -->
-            <div class="absolute bottom-6 left-6 right-6 text-white">
-              <h3 class="text-2xl md:text-3xl font-bold mb-3">
-                {{ service.title }}
-              </h3>
-              <p class="text-sm md:text-base text-gray-200 leading-relaxed">
-                {{ service.description }}
-              </p>
+              <!-- Content -->
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <h3
+                  class="text-2xl md:text-3xl font-bold mb-3 transition-colors duration-300">
+                  {{ service.title }}
+                </h3>
+                <p
+                  class="text-sm md:text-base text-gray-200 leading-relaxed transition-opacity duration-300 group-hover:opacity-90">
+                  {{ service.description }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
