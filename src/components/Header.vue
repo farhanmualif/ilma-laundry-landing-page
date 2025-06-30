@@ -4,13 +4,11 @@
     data-aos-duration="1000"
     data-aos-delay="2000"
     :class="[
-      'flex justify-between items-center p-4 mx-auto transition-all duration-300',
-      isScrolled ? 'fixed top-0 left-0 right-0 z-50 bg-white ' : 'relative',
+      'flex justify-between items-center p-4 mx-auto transition-all duration-300 z-50',
+      isScrolled ? 'fixed top-0 left-0 right-0 z-50 bg-white' : 'relative',
     ]">
     <div class="flex items-center space-x-2 w-10/12 mx-auto">
-      <div class="">
-        <img :src="logoIlma" alt="Ilma Laundry" class="h-20" />
-      </div>
+      <img :src="logoIlma" alt="Ilma Laundry" class="h-20" />
 
       <!-- Burger Button (Mobile Only) -->
       <BurgerButton

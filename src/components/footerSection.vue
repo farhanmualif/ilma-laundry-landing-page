@@ -27,7 +27,7 @@
         <p class="text-white">
           Desa Muncang RT 34/RW 04<br />Bodeh, Pemalang, Jawa Tengah
         </p>
-        <p class="text-white mt-2">0812-3456-7890</p>
+        <p class="text-white mt-2">+62 819-9465-2424</p>
       </div>
     </div>
 

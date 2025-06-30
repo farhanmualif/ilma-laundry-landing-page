@@ -1,6 +1,6 @@
 <template>
-  <section id="lokasi" class="py-16 px-4 bg-white">
-    <div class="max-w-7xl mx-auto">
+  <section id="lokasi" class="px-4 py-16 bg-white lg:max-w-7xl mx-auto">
+    <div class="mx-auto">
       <!-- Judul -->
       <div
         class="text-center mb-10"
@@ -9,7 +9,7 @@
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Lokasi Kami
         </h2>
-        <p class="text-lg text-gray-600 max-w-xl mx-auto">
+        <p class="text-lg text-gray-600 mx-auto">
           Temukan lokasi usaha kami di peta berikut, atau kunjungi langsung
           alamat lengkap kami di bawah ini.
         </p>
@@ -26,7 +26,7 @@
           height="450"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="w-full h-[450px] border-none">
+          class="h-[450px] border-none">
         </iframe>
       </div>
 

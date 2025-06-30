@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white font-sans">
+  <div class="bg-white font-sans">
     <!-- Header -->
     <Header />
     <!-- Hero Section -->
@@ -12,6 +12,7 @@
     <LokasiKamiSection />
     <!-- Footer -->
     <FooterSection />
+
     <!-- Floating WhatsApp -->
     <a
       href="https://wa.me/6281994652424"
@@ -19,7 +20,7 @@
       data-aos="fade-up"
       data-aos-once="true"
       class="fixed bottom-6 right-6 opacity-0 aos-init aos-animate animate-bounceIn">
-      <img :src="whatsapp" alt="WhatsApp" class="w-14 h-14" />
+      <img :src="whatsapp" alt="WhatsApp" class="h-14" />
     </a>
   </div>
 </template>
