@@ -16,22 +16,27 @@
         d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
   </button>
-  <div
-    v-if="isOpen"
-    class="md:hidden absolute top-28 left-0 w-screen bg-white shadow-md z-50 transition-all duration-300 ease-in-out">
-    <nav class="flex flex-col items-center space-y-4 py-6 text-gray-700">
-      <a href="#home" class="hover:text-blue-400 font-medium text-lg">Home</a>
-      <a href="#tentang" class="hover:text-blue-400 font-medium text-lg"
-        >Tentang Kami</a
-      >
-      <a href="#layanan" class="hover:text-blue-400 font-medium text-lg" hero
-        >Layanan Kami</a
-      >
-      <a href="#lokasi" class="hover:text-blue-400 font-medium text-lg"
-        >Lokasi Kami</a
-      >
-    </nav>
-  </div>
+  <Transition name="slide-fade">
+    <div
+      v-if="isOpen"
+      class="md:hidden absolute top-28 left-0 w-screen bg-white shadow-md z-50 transition-all duration-300 ease-in-out">
+      <nav
+        data-aos="fade-down"
+        data-aos-duration="300"
+        class="flex flex-col items-center space-y-4 py-6 text-gray-700">
+        <a href="#home" class="hover:text-blue-400 font-medium text-lg">Home</a>
+        <a href="#tentang" class="hover:text-blue-400 font-medium text-lg"
+          >Tentang Kami</a
+        >
+        <a href="#layanan" class="hover:text-blue-400 font-medium text-lg" hero
+          >Layanan Kami</a
+        >
+        <a href="#lokasi" class="hover:text-blue-400 font-medium text-lg"
+          >Lokasi Kami</a
+        >
+      </nav>
+    </div>
+  </Transition>
 </template>
 
 <script setup lang="ts">
@@ -40,9 +45,7 @@ const { isOpen } = defineProps<{
 }>();
 defineEmits(["toggle"]);
 </script>
-
-<!-- <style scoped>  
-/* Tambahkan transisi Vue custom */
+<style scoped>
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.3s ease;
@@ -57,4 +60,4 @@ defineEmits(["toggle"]);
   opacity: 1;
   transform: translateY(0);
 }
-</style> -->
+</style>
